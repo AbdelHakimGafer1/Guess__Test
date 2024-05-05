@@ -103,10 +103,9 @@ const intiGame = (button,clickedletter)=>{
      }
      button.disabled=true ; 
     guesseText.innerText=`${wrongGuessescount} / ${maxGussescount} `
-    if(wrongGuessescount===maxGussescount)return (gameOver(false));
+    if(wrongGuessescount===maxGussescount) return(gameOver(false));
 
     if(correctLetters.length===curretWord.length)return(gameOver(true));
-    Window.location.reload();
     }
 
     // Creating Keybord by js 
