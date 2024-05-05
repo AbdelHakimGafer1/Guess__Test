@@ -38,7 +38,10 @@ const gameModel =document.querySelector('.game-model') ;
 const spaN=document.querySelector('.container');
 let curretWord,wrongGuessescount=0,correctLetters=[] ;
 let idID ;
-
+let Play_Again=document.querySelector('.play-again');
+let Reload=()=>{
+    window.location.reload();
+}
 const getRandomword = () =>{
     const {word,hint}=wordlist[Math.floor(Math.random()*wordlist.length)];
     curretWord=word;
