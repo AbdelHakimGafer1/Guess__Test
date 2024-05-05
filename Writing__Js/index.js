@@ -103,7 +103,7 @@ const intiGame = (button,clickedletter)=>{
      }
      button.disabled=true ; 
     guesseText.innerText=`${wrongGuessescount} / ${maxGussescount} `
-    if(wrongGuessescount===maxGussescount)returnreturn{
+    if(wrongGuessescount===maxGussescount)return{
         (gameOver(false));
     Window.location.reload();
     } ; ;
